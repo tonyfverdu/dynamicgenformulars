@@ -1,0 +1,80 @@
+/*   ////////////////////////////////////////       */
+.contSelect {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  justify-content: flex-start;
+  border-radius: 20px;
+  background: #e0e0e0;
+  box-shadow: inset -12px -12px 24px #aaaaaa, inset 12px 12px 24px #ffffff;
+  width: auto;
+  min-width: 14rem;
+  height: auto;
+  min-height: 4rem;
+  padding: 1% auto;
+  margin: 1% auto;
+  border-radius: 5px;
+  border: 1px solid rgba(231, 230, 230, 0.6);
+}
+.contSelect > .labelOfSelect {
+  position: relative;
+  text-align: center;
+  font-size: 0.65rem;
+  font-weight: 700;
+  color: rgb(9, 9, 9);
+  margin: 0% 2%;
+  padding: 1%;
+  text-align: left;
+  width: auto;
+  height: auto;
+  min-height: 1.3rem;
+  padding: 1%;
+  margin: 1% 0%;
+  margin-left: 0%;
+}
+.contSelect > select {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  position: relative;
+  text-align: justify;
+  font-size: 0.58rem;
+  font-weight: bold;
+  color: rgb(250, 29, 29);
+  margin: 1% 2%;
+  padding: 1%;
+  width: 12rem;
+  height: auto;
+  padding: 2% 4%;
+  margin: 1% auto;
+}
+.contSelect > select > option {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  position: relative;
+  text-align: justify;
+  font-size: 0.5rem;
+  font-weight: 400;
+  color: rgb(19, 19, 29);
+  margin: 0% auto;
+  padding: 1%;
+  padding-right: 1.5%;
+  margin: 1% auto;
+  transition: all 0.35s ease;
+}
+.contSelect > select:hover, .contSelect > select:focus {
+  cursor: pointer;
+  border: 1px solid rgb(213, 140, 4);
+}
+
+/*# sourceMappingURL=SelectElement.css.map */

@@ -1,0 +1,72 @@
+/*   ////////////////////////////////////////       */
+.contSelectIni {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  justify-content: flex-start;
+  width: auto;
+  height: auto;
+  min-height: 3rem;
+  padding: 1%;
+  margin: 0% auto;
+}
+.contSelectIni > .labelOfSelect {
+  position: relative;
+  text-align: center;
+  font-size: 0.65rem;
+  font-weight: 700;
+  color: rgb(9, 9, 9);
+  margin: 0% 2%;
+  padding: 1%;
+  text-align: center;
+  width: auto;
+  height: auto;
+  padding: 1%;
+  margin: 1% auto;
+}
+.contSelectIni > select {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  position: relative;
+  text-align: justify;
+  font-size: 0.58rem;
+  font-weight: bold;
+  color: rgb(250, 29, 29);
+  margin: 1% 2%;
+  padding: 1%;
+  width: 10rem;
+  height: auto;
+  padding: 2% 4%;
+  margin: 1% auto;
+}
+.contSelectIni > select > option {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  position: relative;
+  text-align: justify;
+  font-size: 0.5rem;
+  font-weight: 400;
+  color: rgb(19, 19, 29);
+  margin: 0% auto;
+  padding: 1%;
+  padding-right: 1.5%;
+  margin: 1% auto;
+  transition: all 0.35s ease;
+}
+.contSelectIni > select:hover, .contSelectIni > select:focus {
+  cursor: pointer;
+  border: 1px solid rgb(213, 140, 4);
+}
+
+/*# sourceMappingURL=SelectIni.css.map */

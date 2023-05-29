@@ -1,0 +1,20 @@
+option {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  position: relative;
+  text-align: justify;
+  font-size: 0.6rem;
+  font-weight: 400;
+  color: rgba(63, 63, 63, 0.6);
+  margin: 0% auto;
+  padding: 1px;
+  padding-right: 2px;
+  margin: 0.5% auto;
+  transition: all 0.35s ease;
+}
+
+/*# sourceMappingURL=OptionElement.css.map */

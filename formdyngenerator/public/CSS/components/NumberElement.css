@@ -1,0 +1,57 @@
+/*   ////////////////////////////////////////       */
+.contElementNumber {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  border-radius: 20px;
+  background: #e0e0e0;
+  box-shadow: inset -12px -12px 24px #aaaaaa, inset 12px 12px 24px #ffffff;
+  width: auto;
+  min-width: 12rem;
+  height: auto;
+  min-height: 3rem;
+  padding: 1% 2%;
+  margin: 1% auto;
+  border-radius: 5px;
+  border: 1px solid rgba(231, 230, 230, 0.6);
+}
+.contElementNumber > .labelOfForm {
+  position: relative;
+  text-align: center;
+  font-size: 0.65rem;
+  font-weight: 700;
+  color: rgb(9, 9, 9);
+  margin: 0% 2%;
+  padding: 1%;
+  text-align: right;
+  width: 8rem;
+  height: auto;
+  min-height: 1.3rem;
+  padding: 1%;
+  margin: 1% auto;
+  margin-right: 3%;
+}
+.contElementNumber > .contInputNumber {
+  position: relative;
+  text-align: justify;
+  font-size: 0.6rem;
+  font-weight: 400;
+  color: rgb(39, 39, 39);
+  margin: 0% auto;
+  text-align: center;
+  width: 2.4rem;
+  height: auto;
+  min-height: 1.3rem;
+  padding: 1%;
+  margin: 1% auto;
+  transition: all ease 0.35s;
+}
+.contElementNumber > .contInputNumber:hover, .contElementNumber > .contInputNumber:focus {
+  cursor: pointer;
+  border: 1px solid rgb(213, 140, 4);
+}
+
+/*# sourceMappingURL=NumberElement.css.map */

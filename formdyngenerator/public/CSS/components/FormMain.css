@@ -1,0 +1,347 @@
+/*   ////////////////////////////////////////       */
+.contMain {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  justify-content: space-around;
+  align-items: flex-start;
+  height: 100vh;
+}
+.contMain > .contFormMain {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  justify-content: flex-start;
+  background: rgba(203, 203, 203, 0.2);
+  border-radius: 9px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(7.7px);
+  -webkit-backdrop-filter: blur(7.7px);
+  border: 1px solid rgba(203, 203, 203, 0.61);
+  backdrop-filter: blur(12.7px);
+  width: 18rem;
+  height: auto;
+  padding: 1%;
+  margin: 0%;
+  margin-left: 0%;
+  margin-top: 7.2%;
+  border: 1px solid rgba(63, 63, 63, 0.6);
+  border-radius: 6px;
+}
+.contMain > .contFormMain > .headerFormMain {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 0% auto;
+  padding: 2% auto;
+  background-color: transparent;
+  margin: 1% auto;
+}
+.contMain > .contFormMain > .headerFormMain > .titleFormMain {
+  color: rgb(9, 9, 9);
+  text-align: left;
+  font-size: 0.8rem;
+  font-weight: bold;
+  margin: 1% auto;
+  text-shadow: -4px -3px 4px rgba(0, 0, 0, 0.39), 2px 3px 4px rgba(0, 0, 0, 0.3);
+}
+.contMain > .contFormMain > .contFormIni {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  border-radius: 20px;
+  background: #e0e0e0;
+  box-shadow: inset -12px -12px 24px #aaaaaa, inset 12px 12px 24px #ffffff;
+  width: 16rem;
+  height: auto;
+  padding: 1.4% 4%;
+  margin: 0% auto;
+  border-radius: 6px;
+  border: 2px solid rgba(63, 63, 63, 0.6);
+}
+.contMain > .contFormMain > .contFormIni > .contSelectIni {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 1% auto;
+  padding: 1%;
+}
+.contMain > .contFormMain > .contFormIni > .contButtons {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  justify-content: flex-end;
+  width: inherit;
+  height: auto;
+  padding: 1%;
+  margin-top: 1%;
+  margin-right: 40%;
+}
+.contMain > .contFormMain > .contJSONOfInput {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  align-items: flex-start;
+  background: rgba(203, 203, 203, 0.2);
+  border-radius: 9px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(7.7px);
+  -webkit-backdrop-filter: blur(7.7px);
+  border: 1px solid rgba(203, 203, 203, 0.61);
+  width: 16rem;
+  height: auto;
+  height: auto;
+  padding: 1.4% 4%;
+  margin: 0% auto;
+  margin-top: 4%;
+  border-radius: 6px;
+  border: 1px solid rgba(63, 63, 63, 0.6);
+}
+.contMain > .contFormMain > .contJSONOfInput > .headerJSONInput {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 0% auto;
+  padding: 2% auto;
+  background-color: transparent;
+  backdrop-filter: blur(12.7px);
+  height: auto;
+  margin: 2% auto;
+  padding: 1%;
+  border: 1px solid rgba(63, 63, 63, 0.6);
+  border-radius: 6px;
+}
+.contMain > .contFormMain > .contJSONOfInput > .headerJSONInput > .titleJSONInput {
+  color: rgb(9, 9, 9);
+  text-align: left;
+  font-size: 0.65rem;
+  font-weight: bold;
+  margin: 1% auto;
+  text-shadow: -4px -3px 4px rgba(0, 0, 0, 0.39), 2px 3px 4px rgba(0, 0, 0, 0.3);
+}
+.contMain > .contFormMain > .contJSONOfInput > .contJSON {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  width: 15rem;
+  background-color: rgba(242, 242, 242, 0.6);
+  margin: 1% auto;
+  padding: 2%;
+}
+.contMain > .contFormMain > .contJSONOfInput > .contJSON > p {
+  position: relative;
+  text-align: justify;
+  font-size: 0.45rem;
+  font-weight: 400;
+  color: rgb(9, 9, 9);
+  margin: 0% auto;
+  text-align: lef;
+  font-style: oblique;
+  margin: 1%;
+  padding: 2%;
+}
+.contMain > .contFormDynamic {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background: rgba(203, 203, 203, 0.2);
+  border-radius: 9px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(7.7px);
+  -webkit-backdrop-filter: blur(7.7px);
+  border: 1px solid rgba(203, 203, 203, 0.61);
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 55vw;
+  height: auto;
+  padding: 2%;
+  margin: 0%;
+  margin-left: 0%;
+  margin-top: 7.2%;
+  border-radius: 6px;
+  border: 1px solid rgba(63, 63, 63, 0.6);
+}
+.contMain > .contFormDynamic > .headerFormDynamic {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 0% auto;
+  padding: 2% auto;
+  background-color: transparent;
+  margin: 1% auto;
+}
+.contMain > .contFormDynamic > .headerFormDynamic > .titleFormDynamic {
+  color: rgb(9, 9, 9);
+  text-align: left;
+  font-size: 0.8rem;
+  font-weight: bold;
+  margin: 1% auto;
+  text-shadow: -4px -3px 4px rgba(0, 0, 0, 0.39), 2px 3px 4px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  animation: bewegungText 1s linear forwards;
+}
+.contMain > .contFormDynamic > .headerFormDynamic > .titleFormDynamic > span {
+  color: rgba(2, 2, 101, 0.9);
+  font-size: 0.85rem;
+  animation: farbeText 3s ease-in-out infinite;
+}
+.contMain > .contFormDynamic > .formDynamic {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  border-radius: 20px;
+  background: #e0e0e0;
+  box-shadow: inset -12px -12px 24px #aaaaaa, inset 12px 12px 24px #ffffff;
+  height: auto;
+  padding: 1.4% 4%;
+  margin: 0% auto;
+  gap: 1.1%;
+  border-radius: 6px;
+  border: 2px solid rgba(63, 63, 63, 0.6);
+}
+.contMain > .contFormDynamic > .formDynamic > .contButtonsFormDynamic {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  justify-content: flex-end;
+  height: auto;
+  padding: 1%;
+  margin-top: 1%;
+  gap: 1%;
+}
+.contMain > .contJSONOfExit {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  align-items: flex-start;
+  background: rgba(203, 203, 203, 0.2);
+  border-radius: 9px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(7.7px);
+  -webkit-backdrop-filter: blur(7.7px);
+  border: 1px solid rgba(203, 203, 203, 0.61);
+  width: 16rem;
+  height: auto;
+  padding: 2%;
+  margin: 0%;
+  margin-left: 0%;
+  margin-top: 7.2%;
+  border-radius: 6px;
+  border: 1px solid rgba(63, 63, 63, 0.6);
+}
+.contMain > .contJSONOfExit > .headerJSONExit {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 0% auto;
+  padding: 2% auto;
+  background-color: transparent;
+  margin: 1% auto;
+  backdrop-filter: blur(12.7px);
+  height: auto;
+  border: 1px solid rgba(63, 63, 63, 0.6);
+  border-radius: 6px;
+  margin: 1% auto;
+  padding: 1%;
+}
+.contMain > .contJSONOfExit > .headerJSONExit > .titleJSONExit {
+  color: rgb(9, 9, 9);
+  text-align: left;
+  font-size: 0.8rem;
+  font-weight: bold;
+  margin: 1% auto;
+  text-shadow: -4px -3px 4px rgba(0, 0, 0, 0.39), 2px 3px 4px rgba(0, 0, 0, 0.3);
+}
+.contMain > .contJSONOfExit > .contJSON {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: rgba(242, 242, 242, 0.6);
+  margin: 1% auto;
+  padding: 1%;
+}
+.contMain > .contJSONOfExit > .contJSON > p {
+  position: relative;
+  text-align: justify;
+  font-size: 0.5rem;
+  font-weight: 400;
+  color: rgb(9, 9, 9);
+  margin: 0% auto;
+  text-align: left;
+  font-style: oblique;
+  margin: 1%;
+  padding: 1%;
+}
+
+@keyframes bewegungText {
+  0% {
+    opacity: 0.8;
+    transform: translateX(120%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+}
+@keyframes farbeText {
+  0% {
+    opacity: 0.8;
+    color: rgb(220, 21, 21);
+  }
+  100% {
+    opacity: 1;
+    color: rgba(207, 35, 35, 0.9);
+  }
+}
+
+/*# sourceMappingURL=FormMain.css.map */
