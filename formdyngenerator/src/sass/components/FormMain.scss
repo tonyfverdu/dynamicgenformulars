@@ -1,0 +1,231 @@
+@use '../myvariables' as v;
+@use '../layouts' as l;
+@use '../neumorphismus' as n;
+@use '../designElement' as d;
+@use '../glassMorphismus' as g;
+
+
+.contMain {
+    @include l.layoutFlexboxRowCenter;
+    justify-content:space-around;
+    align-items: flex-start;
+    height: 100vh;
+
+    &>.contFormMain {
+        @include l.layoutFlexboxColumCenter;
+        justify-content: flex-start;
+        @include g.GlassMorphismus1;
+        backdrop-filter: blur(12.7px);
+        width: 18rem;
+        height: auto;
+        padding: 1%;
+        margin: 0%;
+        margin-left: 0%;
+        margin-top: 7.2%;
+        border: 1px solid v.$backgroundColorDunkelGray4T;
+        border-radius: 6px;
+
+        &>.headerFormMain {
+            @include d.desigHeader (transparent);
+            margin: 1% auto;
+
+            &>.titleFormMain {
+                @include d.desig_H_element2 (v.$colorTextIni, 0.8rem);
+            }
+        }
+
+        &>.contFormIni {
+            @include l.layoutFlexboxColumCenter;
+            @include n.neuMorphismus3;
+            width: 16rem;
+            height: auto;
+            padding: 1.4% 4%;
+            margin: 0% auto;
+            border-radius: 6px;
+            border: 2px solid v.$backgroundColorDunkelGray4T;
+
+            &>.contSelectIni {
+                @include l.layoutFlexboxRowCenter;
+                margin: 1% auto;
+                padding: 1%;
+            }
+
+            &>.contButtons {
+                @include l.layoutFlexboxRowCenter;
+                justify-content: flex-end;
+                width: inherit;
+                height: auto;
+                padding: 1%;
+                margin-top: 1%;
+                margin-right: 40%;
+            }
+        }
+
+        &>.contJSONOfInput {
+            @include l.layoutFlexboxColumCenter;
+            align-items: flex-start;
+            @include g.GlassMorphismus1;
+            width: 16rem;
+            height: auto;
+            height: auto;
+            padding: 1.4% 4%;
+            margin: 0% auto;
+            margin-top: 4%;
+            border-radius: 6px;
+            border: 1px solid v.$backgroundColorDunkelGray4T;
+    
+            &>.headerJSONInput {
+                @include d.desigHeader (transparent);
+                backdrop-filter: blur(12.7px);
+                height: auto;
+                margin:2% auto;
+                padding: 1%;
+                border: 1px solid v.$backgroundColorDunkelGray4T;
+                border-radius: 6px;
+            
+                &>.titleJSONInput {
+                    @include d.desig_H_element2 (v.$colorTextIni, 0.65rem);
+                }
+            }
+    
+            &>.contJSON{
+                @include l.layoutFlexboxRowCenter;
+                width: 15rem;
+                background-color: v.$backgroundColorIniWhiteT;
+                margin:1% auto;
+                padding: 2%;
+    
+                &>p {
+                    @include d.configurationText1 (v.$colorTextIni, 0.45rem);
+                    text-align: lef;
+                    font-style:oblique;
+                    margin:1%;
+                    padding: 2%;
+                }
+            }
+        }
+    }
+
+    &>.contFormDynamic {
+        @include l.layoutFlexboxColumCenter;
+        @include g.GlassMorphismus1;
+        justify-content: flex-start;
+        align-items: flex-start;
+        width: 55vw;
+        height: auto;
+        padding: 2%;
+        margin: 0%;
+        margin-left: 0%;
+        margin-top: 7.2%;
+        border-radius: 6px;
+        border: 1px solid v.$backgroundColorDunkelGray4T;
+
+        &>.headerFormDynamic {
+            @include d.desigHeader (transparent);
+            margin: 1% auto;
+
+            &>.titleFormDynamic {
+                @include d.desig_H_element2 (v.$colorTextIni, 0.8rem);
+                overflow: hidden;
+                animation: bewegungText 1s linear forwards;
+
+                &>span {
+                    color: v.$colorNavy;
+                    font-size: 0.85rem;
+                    animation: farbeText 3s ease-in-out infinite;
+                }
+            }
+        }
+
+        &>.formDynamic {
+            @include l.layoutFlexboxRowCenter;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            @include n.neuMorphismus3;
+            height: auto;
+            padding: 1.4% 4%;
+            margin: 0% auto;
+            gap: 1.1%;
+            border-radius: 6px;
+            border: 2px solid v.$backgroundColorDunkelGray4T;
+
+            &>.contButtonsFormDynamic {
+                @include l.layoutFlexboxRowCenter;
+                justify-content: flex-end;
+                height: auto;
+                padding: 1%;
+                margin-top: 1%;
+                gap: 1%;
+            }
+        }
+    }
+
+    &>.contJSONOfExit {
+        @include l.layoutFlexboxColumCenter;
+        align-items: flex-start;
+        @include g.GlassMorphismus1;
+        width: 16rem;
+        height: auto;
+        padding: 2%;
+        margin: 0%;
+        margin-left: 0%;
+        margin-top: 7.2%;
+        border-radius: 6px;
+        border: 1px solid v.$backgroundColorDunkelGray4T;
+
+        &>.headerJSONExit {
+            @include d.desigHeader (transparent);
+            margin: 1% auto;
+            backdrop-filter: blur(12.7px);
+            height: auto;
+            border: 1px solid v.$backgroundColorDunkelGray4T;
+            border-radius: 6px;
+            margin:1% auto;
+            padding: 1%;
+
+            &>.titleJSONExit {
+                @include d.desig_H_element2 (v.$colorTextIni, 0.8rem);
+            }
+        }
+
+        &>.contJSON{
+            @include l.layoutFlexboxRowCenter;
+            background-color: v.$backgroundColorIniWhiteT;
+            margin:1% auto;
+            padding: 1%;
+
+            &>p {
+                @include d.configurationText1 (v.$colorTextIni, 0.5rem);
+                text-align: left;
+                font-style:oblique;
+                margin:1%;
+                padding: 1%;
+            }
+        }
+    }
+}
+
+
+@keyframes bewegungText {
+    0% {
+        opacity: 0.8;
+        transform: translateX(120%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0%);
+    }
+}
+
+@keyframes farbeText {
+    0% {
+        opacity: 0.8;
+        color: v.$colorRedNew;
+    }
+
+    100% {
+        opacity: 1;
+        color: v.$colorRed;
+    }
+}

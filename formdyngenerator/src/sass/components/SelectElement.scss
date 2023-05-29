@@ -1,0 +1,54 @@
+@use '../myvariables' as v;
+@use '../layouts' as l;
+@use '../neumorphismus' as n;
+@use '../designElement' as d;
+
+
+.contSelect {
+  @include l.layoutFlexboxColumCenter;
+  justify-content: flex-start;
+  @include n.neuMorphismus3;
+  width: auto;
+  min-width: 14rem;
+  height: auto;
+  min-height: 4rem;
+  padding: 1% auto;
+  margin: 1% auto;
+  border-radius: 5px;
+  border: 1px solid v.$backgroundColorIniT2;
+
+  &>.labelOfSelect {
+    @include d.configurationLabel (v.$colorTextIni, 0.65rem);
+    text-align:left;
+    width: auto;
+    height: auto;
+    min-height: 1.3rem;
+    padding: 1%;
+    margin: 1% 0%;
+    margin-left: 0%;
+  }
+
+  &>select {
+    @include l.layoutFlexboxColumCenter;
+    @include d.configurationText2 (v.$colorRedNeu, 0.58rem);
+    width: 12rem;
+    height: auto;
+    padding: 2% 4%;
+    margin: 1% auto;
+
+    &>option {
+      @include l.layoutFlexboxRowCenter;
+      @include d.configurationText1 (v.$backgroundColorDunkelGray6, 0.5rem);
+      padding: 1%;
+      padding-right: 1.5%;
+      margin: 1% auto;
+      transition: all 0.35s ease;
+    }
+
+    &:hover,
+    &:focus {
+      cursor: pointer;
+      border: 1px solid v.$colorbackgroudneuOrange;
+    }
+  }
+}

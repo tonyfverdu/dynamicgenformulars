@@ -1,0 +1,45 @@
+@use '../myvariables' as v;
+@use '../layouts' as l;
+@use '../designElement' as d;
+@use '../neumorphismus' as n;
+
+
+.contElementNumber {
+  @include l.layoutFlexboxRowCenter;
+  @include n.neuMorphismus3;
+  width: auto;
+  min-width: 12rem;
+  height: auto;
+  min-height: 3rem;
+  padding: 1% 2%;
+  margin: 1% auto;
+  border-radius: 5px;
+  border: 1px solid v.$backgroundColorIniT2;
+
+  &>.labelOfForm {
+    @include d.configurationLabel (v.$colorTextIni, 0.65rem);
+    text-align:right;
+    width: 8rem;
+    height: auto;
+    min-height: 1.3rem;
+    padding: 1%;
+    margin: 1% auto;
+    margin-right: 3%;
+  }
+
+  &>.contInputNumber {
+    @include d.configurationText1 (v.$backgroundColorDunkelGray5, 0.60rem);
+    text-align: center;
+    width: 2.4rem;
+    height: auto;
+    min-height: 1.3rem;
+    padding: 1%;
+    margin: 1% auto;
+    transition: all ease 0.35s;
+
+    &:hover, &:focus {
+      cursor: pointer;
+      border: 1px solid v.$colorbackgroudneuOrange;
+    }
+  }
+}

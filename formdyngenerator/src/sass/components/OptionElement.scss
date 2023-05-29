@@ -1,0 +1,13 @@
+@use '../myvariables' as v;
+@use '../layouts' as l;
+@use '../designElement' as d;
+
+
+option {
+  @include l.layoutFlexboxRowCenter;
+  @include d.configurationText1 (v.$backgroundColorDunkelGray4T, 0.6rem);
+  padding: 1px;
+  padding-right: 2px;
+  margin: 0.5% auto;
+  transition: all 0.35s ease;
+}
