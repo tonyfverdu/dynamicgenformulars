@@ -7,9 +7,13 @@
 
 .contMain {
     @include l.layoutFlexboxRowCenter;
-    justify-content:space-around;
+    justify-content: space-around;
     align-items: flex-start;
     height: 100vh;
+    overflow: hidden;
+    background-image: url('../../assets/images/cool.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
 
     &>.contFormMain {
         @include l.layoutFlexboxColumCenter;
@@ -72,34 +76,35 @@
             margin: 0% auto;
             margin-top: 4%;
             border-radius: 6px;
-            border: 1px solid v.$backgroundColorDunkelGray4T;
-    
+            border: 1px solid v.$backgroundColorHellGrayT;
+
             &>.headerJSONInput {
-                @include d.desigHeader (transparent);
+                @include d.desigHeader (v.$backgroundColorDunkelBlackT2);
                 backdrop-filter: blur(12.7px);
                 height: auto;
-                margin:2% auto;
+                margin: 2% auto;
                 padding: 1%;
                 border: 1px solid v.$backgroundColorDunkelGray4T;
                 border-radius: 6px;
-            
+
                 &>.titleJSONInput {
-                    @include d.desig_H_element2 (v.$colorTextIni, 0.65rem);
+                    @include d.desig_H_element2 (v.$colorHell1, 0.8rem);
+                    text-align: center;
                 }
             }
-    
-            &>.contJSON{
+
+            &>.contJSON {
                 @include l.layoutFlexboxRowCenter;
                 width: 15rem;
-                background-color: v.$backgroundColorIniWhiteT;
-                margin:1% auto;
+                background-color: v.$backgroundColorDunkelGray3;
+                margin: 1% auto;
                 padding: 2%;
-    
+
                 &>p {
-                    @include d.configurationText1 (v.$colorTextIni, 0.45rem);
+                    @include d.configurationText1 (v.$colorHell, 0.45rem);
                     text-align: lef;
-                    font-style:oblique;
-                    margin:1%;
+                    font-style: oblique;
+                    margin: 1%;
                     padding: 2%;
                 }
             }
@@ -132,7 +137,7 @@
                 &>span {
                     color: v.$colorNavy;
                     font-size: 0.85rem;
-                    animation: farbeText 3s ease-in-out infinite;
+                    animation: farbeText 3s ease-in-out infinite alternate;
                 }
             }
         }
@@ -180,25 +185,26 @@
             height: auto;
             border: 1px solid v.$backgroundColorDunkelGray4T;
             border-radius: 6px;
-            margin:1% auto;
+            margin: 1% auto;
             padding: 1%;
 
             &>.titleJSONExit {
-                @include d.desig_H_element2 (v.$colorTextIni, 0.8rem);
+                @include d.desig_H_element2 (v.$colorHell1, 0.8rem);
+                text-align: center;
             }
         }
 
-        &>.contJSON{
+        &>.contJSON {
             @include l.layoutFlexboxRowCenter;
-            background-color: v.$backgroundColorIniWhiteT;
-            margin:1% auto;
+            background-color: v.$backgroundColorDunkelGray3;
+            margin: 1% auto;
             padding: 1%;
 
             &>p {
-                @include d.configurationText1 (v.$colorTextIni, 0.5rem);
-                text-align: left;
-                font-style:oblique;
-                margin:1%;
+                @include d.configurationText1 (v.$colorHell0, 0.52rem);
+                text-align: center;
+                font-style: oblique;
+                margin: 1%;
                 padding: 1%;
             }
         }
@@ -221,11 +227,11 @@
 @keyframes farbeText {
     0% {
         opacity: 0.8;
-        color: v.$colorRedNew;
+        color: v.$colorHellBlue2;
     }
 
     100% {
         opacity: 1;
-        color: v.$colorRed;
+        color: v.$backgroundColorIniWhite;
     }
 }

@@ -9,7 +9,6 @@ function App() {
   const title = 'MERN App Chat: React, MUI, NodeJS, Express and MongoDB';
   const titleMemoListHeader = 'Dynamic Forms from JSON';
   const subtitleMemoListHeader = 'MERN App (React-NodeJS-Express-MongoDB)';
-  const titleSite = 'A Application in React';
 
   //Usestates variables: toggleHeader, 
   const [toggleHeader, setToggleHeader] = useState(true);

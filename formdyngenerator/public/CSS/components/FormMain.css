@@ -9,6 +9,10 @@
   justify-content: space-around;
   align-items: flex-start;
   height: 100vh;
+  overflow: hidden;
+  background-image: url("../../assets/images/cool.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .contMain > .contFormMain {
   position: relative;
@@ -116,7 +120,7 @@
   margin: 0% auto;
   margin-top: 4%;
   border-radius: 6px;
-  border: 1px solid rgba(63, 63, 63, 0.6);
+  border: 1px solid rgba(167, 166, 166, 0.6);
 }
 .contMain > .contFormMain > .contJSONOfInput > .headerJSONInput {
   position: relative;
@@ -127,7 +131,7 @@
   width: 100%;
   margin: 0% auto;
   padding: 2% auto;
-  background-color: transparent;
+  background-color: rgba(3, 3, 3, 0.6);
   backdrop-filter: blur(12.7px);
   height: auto;
   margin: 2% auto;
@@ -136,12 +140,13 @@
   border-radius: 6px;
 }
 .contMain > .contFormMain > .contJSONOfInput > .headerJSONInput > .titleJSONInput {
-  color: rgb(9, 9, 9);
+  color: rgb(228, 227, 227);
   text-align: left;
-  font-size: 0.65rem;
+  font-size: 0.8rem;
   font-weight: bold;
   margin: 1% auto;
   text-shadow: -4px -3px 4px rgba(0, 0, 0, 0.39), 2px 3px 4px rgba(0, 0, 0, 0.3);
+  text-align: center;
 }
 .contMain > .contFormMain > .contJSONOfInput > .contJSON {
   position: relative;
@@ -151,7 +156,7 @@
   align-items: center;
   width: 100%;
   width: 15rem;
-  background-color: rgba(242, 242, 242, 0.6);
+  background-color: rgba(23, 23, 24, 0.85);
   margin: 1% auto;
   padding: 2%;
 }
@@ -160,7 +165,7 @@
   text-align: justify;
   font-size: 0.45rem;
   font-weight: 400;
-  color: rgb(9, 9, 9);
+  color: rgb(246, 240, 240);
   margin: 0% auto;
   text-align: lef;
   font-style: oblique;
@@ -216,7 +221,7 @@
 .contMain > .contFormDynamic > .headerFormDynamic > .titleFormDynamic > span {
   color: rgba(2, 2, 101, 0.9);
   font-size: 0.85rem;
-  animation: farbeText 3s ease-in-out infinite;
+  animation: farbeText 3s ease-in-out infinite alternate;
 }
 .contMain > .contFormDynamic > .formDynamic {
   position: relative;
@@ -292,12 +297,13 @@
   padding: 1%;
 }
 .contMain > .contJSONOfExit > .headerJSONExit > .titleJSONExit {
-  color: rgb(9, 9, 9);
+  color: rgb(228, 227, 227);
   text-align: left;
   font-size: 0.8rem;
   font-weight: bold;
   margin: 1% auto;
   text-shadow: -4px -3px 4px rgba(0, 0, 0, 0.39), 2px 3px 4px rgba(0, 0, 0, 0.3);
+  text-align: center;
 }
 .contMain > .contJSONOfExit > .contJSON {
   position: relative;
@@ -306,18 +312,18 @@
   justify-content: center;
   align-items: center;
   width: 100%;
-  background-color: rgba(242, 242, 242, 0.6);
+  background-color: rgba(23, 23, 24, 0.85);
   margin: 1% auto;
   padding: 1%;
 }
 .contMain > .contJSONOfExit > .contJSON > p {
   position: relative;
   text-align: justify;
-  font-size: 0.5rem;
+  font-size: 0.52rem;
   font-weight: 400;
-  color: rgb(9, 9, 9);
+  color: rgb(246, 240, 240);
   margin: 0% auto;
-  text-align: left;
+  text-align: center;
   font-style: oblique;
   margin: 1%;
   padding: 1%;
@@ -336,11 +342,11 @@
 @keyframes farbeText {
   0% {
     opacity: 0.8;
-    color: rgb(220, 21, 21);
+    color: cyan;
   }
   100% {
     opacity: 1;
-    color: rgba(207, 35, 35, 0.9);
+    color: rgb(253, 253, 253);
   }
 }
 

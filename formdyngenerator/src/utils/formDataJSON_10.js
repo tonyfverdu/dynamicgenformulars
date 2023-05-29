@@ -9,7 +9,7 @@ const formDataJSON_10 = {
         "tipo": "Lista",  //  Tipo de pregunta => tipo de campo-elemento HTML del formulario
         "obligatorio": true,  //  Atributo de campo obligatorio 
         "respuesta": ["Seleccion 2"],  //  Valor seleccionado como defecto
-        "defecto": 'Seleccion 1',  //  Valor que tendra el campo si no se obtiene en el JSON respuesta
+        "defecto": "Seleccion 1",  //  Valor que tendra el campo si no se obtiene en el JSON respuesta
         "valores": ["Seleccion 1", "Seleccion 2", "Seleccion 3", "Seleccion 4"],  //  Diferentes valores del campo – pregunta en un select
       },
       {
@@ -32,7 +32,7 @@ const formDataJSON_10 = {
         "tipo": "Lista",
         "obligatorio": true,
         "respuesta": ["Medicamento 4"],
-        "defecto": 'Medicamento 1',
+        "defecto": "Medicamento 1",
         "valores": ["Medicamento 1", "Medicamento 2", "Medicamento 3", "Medicamento 4"]
       },
       {
